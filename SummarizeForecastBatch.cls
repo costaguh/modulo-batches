@@ -1,4 +1,4 @@
-global with sharing class SummarizeForecastBatch implements Database.Batchable<SObject> {
+global with sharing class SummarizeForecastBatch implements Database.Batchable<SObject>, Database.Stateful {
     global SummarizeForecastBatch() {}
     
     private AccountInfo accountInfo = null;
